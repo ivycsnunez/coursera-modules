@@ -1,0 +1,108 @@
+/* Responsive Breakpoints */
+/* Desktop: 992px and above */
+/* Tablet: 768px - 991px */
+/* Mobile: <=767px */
+
+/* UNIVERSAL */
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1500px;
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* WHOLE MENU */
+
+.menu {
+  display: flex;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+/* MENU CARDS 453.34px wide */
+
+.menu-card {
+  border: 3px solid #000000;
+  background-color: gray;
+  width: 33.33%;
+  margin: 10px;
+}
+
+/* FOOD NAMES DIV */
+
+.chicken,
+.beef,
+.sushi {
+  float: right;
+  border-bottom: 2px solid #000000;
+  border-left: 2px solid #000000;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 50px;
+  line-height: 10px;
+  text-align: center;
+}
+
+.chicken {
+  background-color: pink;
+}
+
+.beef {
+  background-color: red;
+  color: #ffffff;
+}
+
+.sushi {
+  background-color: yellow;
+}
+
+p {
+  margin: 20px;
+  clear: both;
+}
+
+/* DESKTOP SIZE */
+
+@media (min-width: 992px) {
+}
+
+/* TABLET SIZE */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu {
+    flex-wrap: wrap;
+  }
+
+  .menu-card {
+    width: 48.5%;
+  }
+
+  .menu-card:nth-last-child(1) {
+    width: 100%;
+  }
+}
+
+/* MOBILE SIZE */
+
+/* NOTE: I used 768px as max-width of mobile instead of 767px because with 767 px the layout goes back to desktop size (3 menu cards aligned in 1 line) This setting I used fixed the problem. It was an overlap. */
+@media (max-width: 768px) {
+  .menu-card {
+    width: 100%;
+  }
+  .menu {
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
+}
