@@ -1,1 +1,166 @@
-
+<!DOCTYPE html>
+<!-- create an HTML file called index.html -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Solution for Module 3</title>
+    <!-- BOOTSTRAP CSS framework -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- create a CSS folder with a stylesheet styles.css -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR HEADER -->
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <!-- #8. Navbar: Create a navbar that scrolls away together with the page (the navbar should become invisible and is not fixed to the top when you scroll the page down). The navbar should have a company name (i.e., navbar-brand class) called "Food, LLC" that is aligned to the left side of the navbar. -->
+            <a href="index.html" class="navbar-brand">Food, LLC</a>
+            <!-- NAVBAR TOGGLE BUTTON -->
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#collapsable-nav"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <!-- NAVBAR TOGGLE BUTTON CONTENTS -->
+          <div
+            id="collapsable-nav"
+            class="collapse navbar-collapse"
+            aria-expanded="false"
+          >
+            <!-- #9. Navbar - Mobile View: Create a simple menu button (3 horizontal bars). When the user clicks that button, a dropdown menu should appear (as illustrated in Mobile Open Menu illustration below.) The dropdown menu should contain 3 items: Chicken, Beef, and Sushi. -->
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li class="visible-xs">
+                <a href="#chicken">Chicken</a>
+              </li>
+              <li class="visible-xs">
+                <a href="#beef">Beef</a>
+              </li>
+              <li class="visible-xs">
+                <a href="#sushi">Sushi</a>
+              </li>
+            </ul>
+            <!-- #nav-list -->
+          </div>
+          <!-- .collapse .navbar-collapse -->
+        </div>
+        <!-- .container -->
+      </nav>
+      <!-- #header-nav -->
+    </header>
+    <div id="main-content" class="container">
+      <!-- #10. Page Heading. The page heading that says Our Menu should be centered within the browser window. You must use a Bootstrap class to accomplish this. -->
+      <h1 class="text-center">Our Menu</h1>
+      <div class="menu">
+        <section class="menu-card">
+          <div id="chicken">
+            <h2>Chicken</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
+            voluptas ad quam, architecto minima fugiat? Similique modi pariatur
+            sit praesentium ab ea quos, labore temporibus facilis, ex quod
+            consectetur ducimus, molestiae porro cupiditate sed culpa natus
+            recusandae dolorem unde minus! Architecto ut doloribus numquam
+            excepturi laborum voluptates omnis aut possimus odio voluptatem, qui
+            accusamus! Odio voluptatibus animi natus porro est inventore esse ab
+            rem, minus aliquid quisquam ullam a eaque, distinctio cupiditate?
+            Voluptatibus, magnam iure doloribus ratione doloremque alias illo
+            molestias facilis rerum, voluptates aliquid nihil debitis ipsa
+            deleniti facere eaque quidem deserunt eligendi repudiandae
+            accusamus! Cum, et illum. Eveniet tempora in obcaecati laborum porro
+            aliquam illum, enim quae, exercitationem amet modi doloribus rem
+            esse accusamus quo unde. Recusandae distinctio voluptatibus
+            quibusdam odit eum, neque numquam libero aspernatur voluptas ad
+            sequi ut reiciendis facere quod dignissimos. Nulla animi labore
+            architecto consectetur voluptatem dolorum sint, ad in possimus vero
+            odio, autem beatae dolorem perspiciatis doloremque ut sapiente
+            necessitatibus eius maiores est iste! Aspernatur, adipisci minus.
+            Est, tempore commodi deleniti a cum in tempora nulla assumenda,
+            tenetur veritatis et dicta pariatur nam fuga natus. Et ex animi
+            mollitia alias soluta dolorum! Officiis distinctio, doloribus
+            quibusdam minus explicabo consequuntur. Inventore maiores nulla
+            deserunt!
+          </p>
+        </section>
+        <section class="menu-card">
+          <div id="beef">
+            <h2>Beef</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
+            voluptas ad quam, architecto minima fugiat? Similique modi pariatur
+            sit praesentium ab ea quos, labore temporibus facilis, ex quod
+            consectetur ducimus, molestiae porro cupiditate sed culpa natus
+            recusandae dolorem unde minus! Architecto ut doloribus numquam
+            excepturi laborum voluptates omnis aut possimus odio voluptatem, qui
+            accusamus! Odio voluptatibus animi natus porro est inventore esse ab
+            rem, minus aliquid quisquam ullam a eaque, distinctio cupiditate?
+            Voluptatibus, magnam iure doloribus ratione doloremque alias illo
+            molestias facilis rerum, voluptates aliquid nihil debitis ipsa
+            deleniti facere eaque quidem deserunt eligendi repudiandae
+            accusamus! Cum, et illum. Eveniet tempora in obcaecati laborum porro
+            aliquam illum, enim quae, exercitationem amet modi doloribus rem
+            esse accusamus quo unde. Recusandae distinctio voluptatibus
+            quibusdam odit eum, neque numquam libero aspernatur voluptas ad
+            sequi ut reiciendis facere quod dignissimos. Nulla animi labore
+            architecto consectetur voluptatem dolorum sint, ad in possimus vero
+            odio, autem beatae dolorem perspiciatis doloremque ut sapiente
+            necessitatibus eius maiores est iste! Aspernatur, adipisci minus.
+            Est, tempore commodi deleniti a cum in tempora nulla assumenda,
+            tenetur veritatis et dicta pariatur nam fuga natus. Et ex animi
+            mollitia alias soluta dolorum! Officiis distinctio, doloribus
+            quibusdam minus explicabo consequuntur. Inventore maiores nulla
+            deserunt!
+          </p>
+        </section>
+        <section class="menu-card">
+          <div id="sushi">
+            <h2>Sushi</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
+            voluptas ad quam, architecto minima fugiat? Similique modi pariatur
+            sit praesentium ab ea quos, labore temporibus facilis, ex quod
+            consectetur ducimus, molestiae porro cupiditate sed culpa natus
+            recusandae dolorem unde minus! Architecto ut doloribus numquam
+            excepturi laborum voluptates omnis aut possimus odio voluptatem, qui
+            accusamus! Odio voluptatibus animi natus porro est inventore esse ab
+            rem, minus aliquid quisquam ullam a eaque, distinctio cupiditate?
+            Voluptatibus, magnam iure doloribus ratione doloremque alias illo
+            molestias facilis rerum, voluptates aliquid nihil debitis ipsa
+            deleniti facere eaque quidem deserunt eligendi repudiandae
+            accusamus! Cum, et illum. Eveniet tempora in obcaecati laborum porro
+            aliquam illum, enim quae, exercitationem amet modi doloribus rem
+            esse accusamus quo unde. Recusandae distinctio voluptatibus
+            quibusdam odit eum, neque numquam libero aspernatur voluptas ad
+            sequi ut reiciendis facere quod dignissimos. Nulla animi labore
+            architecto consectetur voluptatem dolorum sint, ad in possimus vero
+            odio, autem beatae dolorem perspiciatis doloremque ut sapiente
+            necessitatibus eius maiores est iste! Aspernatur, adipisci minus.
+            Est, tempore commodi deleniti a cum in tempora nulla assumenda,
+            tenetur veritatis et dicta pariatur nam fuga natus. Et ex animi
+            mollitia alias soluta dolorum! Officiis distinctio, doloribus
+            quibusdam minus explicabo consequuntur. Inventore maiores nulla
+            deserunt!
+          </p>
+        </section>
+      </div>
+    </div>
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
